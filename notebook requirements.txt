@@ -1,0 +1,25 @@
+# Core analysis dependencies for the notebooks.
+# Python 3.10+ recommended.
+
+# data handling
+pandas
+numpy
+scipy
+pyarrow
+
+# machine learning and NLP
+scikit-learn
+sentence-transformers
+
+# public-profile signals
+mwviews
+google-cloud-bigquery
+
+# acquisition and scraping (notebooks 01 to 06 and the top-up scraper)
+requests
+beautifulsoup4
+seleniumbase
+
+# visualisation
+matplotlib
+plotly
