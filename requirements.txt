@@ -11,11 +11,11 @@ pyarrow
 scikit-learn
 sentence-transformers
 
-# public-profile signals
+# public profile signals
 mwviews
 google-cloud-bigquery
 
-# acquisition and scraping (notebooks 01 to 06 and the top-up scraper)
+# acquisition and scraping
 requests
 beautifulsoup4
 seleniumbase
