@@ -1,6 +1,5 @@
 """
 ufc_stats_topup.py
-==================
 
 Purpose
 -------
@@ -12,7 +11,7 @@ missing from an existing set of six CSVs whose schema matches the Greco1899
         ->  the six CSVs are pushed to a public repository
         ->  notebooks repoint BASE_URL to that repo; nothing else changes.
 
-Output files (byte-compatible column order with Greco; verified live)
+Output files (compatible column order with Greco; verified live)
 --------------------------------------------------------------------
     ufc_event_details.csv    EVENT, URL, DATE, LOCATION
     ufc_fight_details.csv     EVENT, BOUT, URL
@@ -24,13 +23,13 @@ Output files (byte-compatible column order with Greco; verified live)
     ufc_fighter_details.csv   FIRST, LAST, NICKNAME, URL
     ufc_fighter_tott.csv      FIGHTER, HEIGHT, WEIGHT, REACH, STANCE, DOB, URL
 
-Two things to verify locally on first run (see README block at the bottom):
+Two things to verify locally on first run:
     1. ufcstats.com requires real JS execution; this script drives
        a real Chrome via SeleniumBase UC mode, which opens with a disconnect/
        reconnect to clear "checking your browser" and will click a Turnstile
        widget if one appears (HEADLESS=False is required for that click). A visible
        Chrome window will open; that is expected.
-    2. The per-round stats parser (parse_fight_stats), which could not be
+    2. The round stats parser (parse_fight_stats) could not be
        checked against the live DOM from the authoring environment. Run
        `--debug-fight <fight_url>`
 
