@@ -7,8 +7,7 @@
 --   snippet cell); paste its output here to refresh.-- Matching: MMA/UFC-context records only; distinctive-surname matching with a
 --   common-surname blocklist to avoid roster-internal collisions.
 -- Output columns: fighter, use_surname, gdelt_volume, gdelt_active_days.
--- Run once in the BigQuery console; result saved as gdelt_volume.csv and
---   post-processed in notebook 13, BLOCK 5.
+-- Run once in the BigQuery console; result saved as gdelt_volume.csv 
 
 WITH roster AS (
   SELECT name AS fighter
