@@ -1,0 +1,31 @@
+method_baselines:
+  ko_tko: 0.85
+  submission: 0.85
+  doctor_stoppage: 0.8
+  decision_unanimous: 0.76
+  decision_majority: 0.73
+  decision_split: 0.7
+  dq: 0.7
+dominance:
+  max_swing: 0.15
+  weights:
+    strike_diff: 0.4
+    control_diff: 0.3
+    knockdowns: 0.2
+    finish_round: 0.1
+  saturation:
+    strike_diff: 43
+    control_diff: 423
+    knockdowns: 1
+    finish_round_r1: 1.0
+    finish_round_r2: 0.66
+    finish_round_r3: 0.33
+    finish_round_r4_5: 0.1
+clipping:
+  winner_min: 0.5
+  winner_max: 1.0
+meta:
+  status: informed priors with data-calibrated saturation thresholds
+  last_reviewed: '2026-06-04'
+  calibrated_from: 90th percentile of bouts with round-level coverage
+  notes: Validated against Fight Matrix per-division Spearman correlation.
